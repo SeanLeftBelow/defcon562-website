@@ -1,0 +1,205 @@
+html {
+  background-color: #646361;
+  padding: 0;
+  margin: 25px 25px 75px 25px;
+  color: #fff;
+  font-family: 'SF Atarian System', 'Verdana';
+}
+html.cal {
+  background-color:#000;
+  background-image: linear-gradient(gray 2px, transparent 2px),
+  linear-gradient(90deg, gray 2px, transparent 2px),
+  linear-gradient(rgba(221,221,221,.3) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(221,221,221,.3) 1px, transparent 1px);
+  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+@font-face {
+  font-family: 'SF Atarian System';
+  src: url('AtarianSystem.ttf');
+}
+a:link, a:visited, a:hover, a:active {
+    color: white
+}
+p, pre {
+  font-size: 18px;
+  color: #e08349;
+  margin: 0;
+  padding: 0;
+}
+p.left {
+  text-align: left
+}
+p.font, pre.font {
+  font-family: 'Courier New';
+  font-size: 15px;
+  color: #fff;
+}
+/*#bottomtext:hover p.irc1 {
+  display: none;
+}
+#bottomtext:hover p.irc1::after {
+  content: "xxxxxxxxx";
+}*/
+h1 {
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 5em;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+ height: 12px;
+ border: 0;
+ box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  }
+
+td{
+  width: 50px;
+}
+#back {
+  margin:0 auto;
+  background-color: #50473f;
+  border: 1px solid #18171a;
+  width: 94%;
+  height: 50px;
+  padding: 0;
+  border-bottom-style: hidden;
+  }
+
+#unit {
+  margin:0 auto;
+  background-color: #646361;
+  border: 8px solid #18171a;
+  width: 95%;
+  padding: 0;
+  border-top-style: hidden;
+  }
+
+#frameOut {
+    background-color: #828181;
+    padding: 1px 6px 12px 6px;
+  }
+#frame {
+  background-color: #241b1c;
+  padding: 5px;
+}
+#frameIn {
+  background-color: #241b1c;
+  padding: 3px;
+}
+#orangeFrame {
+  background-color: #e08349;
+  padding: 1px;
+}
+
+#interface {
+  background-color: #5b5a57;
+  text-align: center;
+}
+/* BUTTONS */
+.cartridge {
+    margin:0 auto;
+    align-self: center;
+    border-radius: 10px;
+    border: 4px solid #18171a;
+    background-color: #404148;
+    width: 200px;
+    height: 30px;
+}
+.cartridgeIn {
+    margin: 10px 8px 10px 8px;
+    align-self: center;
+    border-radius: 10px;
+    border: 2px dotted #18171a;
+    background-color: #404148;
+    width: 180px;
+    height: 5px;
+}
+.switchOut {
+    margin:0 auto;
+    align-self: center;
+    border-radius: 10px;
+    border: 4px solid #18171a;
+    background-color: #404148;
+    width: 14px;
+    height: 30px;
+    cursor: pointer;
+}
+.switchIn {
+    margin:0 auto;
+    align-self: center;
+    border-radius: 10px;
+    border: 3px solid #726e6a;
+    background-color: #e4e1d8;
+    text-decoration: none;
+    padding: 1px 4px;
+    position: relative;
+    right: 2px;
+}
+
+.switchIn:focus {
+    pointer-events: none;
+    position: relative;
+    cursor: pointer;
+    top: 16px;
+}
+
+.fill {
+  width: 100%;
+}
+
+
+
+
+#row:nth-child(3n+0){
+  background: #646361;
+  padding: 4px;
+}
+#row:nth-child(3n+1){
+  background: #828181;
+  padding: 6px;
+}
+#row:nth-child(3n+2){
+  background: #272425;
+  padding: 4px;
+}
+
+#wood {
+    background-image: url('wood.jpg');
+    height: 110px;
+    border: 5px solid #47473f;
+    border-bottom-style: hidden;
+    background-size: cover;
+}
+#bottomtext {
+  text-align: center;
+}
+#bottomtext p.irc span{
+  position: relative;
+  content: 'irc.dc562.org+6697'
+}
+#bottomtext:hover p.irc span{
+  display: none;
+}
+#bottomtext:hover p.irc:after{
+  content: 'txwdkxpaumgupsgc.onion:6698';
+}
+svg.atari {
+  float: right;
+  fill: white;
+}
